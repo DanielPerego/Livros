@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f1dfdf;
+    font-family: "Oswald", sans-serif;
 }
 nav{
     position: fixed;
@@ -31,11 +32,15 @@ nav ul li a{
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
-    color: white;
+    color: rgb(0, 0, 0);
     justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
 }
 nav ul li a:hover{
     color: #007BFF;
+    background-color: #acb7c2;
 }
 header{
     background: url(https://blog.blablacar.com.br/wp-content/uploads/2024/10/biblioteca.jpg);
@@ -46,7 +51,8 @@ header{
     color: white;
     padding: 0 20px;
     text-align: center;
-    border: 8px solid black;
+    border: 6px solid black;
+    border-radius: 10px;
 }
 header h1{
     font-size: 48px;
@@ -54,13 +60,19 @@ header h1{
     line-height: 1.2;
 }
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     padding: 20px;
     background-color: #f8f9fa;
     gap: 30px;
     text-align: center;
     background-color: #f0c1b2;
+    margin: 0 auto;
+    max-width: 1600px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
 }
 .container img{
     width: 200px;
@@ -84,8 +96,13 @@ header h1{
 .container h2:hover{
     background-color: #acb7c2;
 }
+.container a{
+    text-decoration: none;
+    color: black;
+}
 .container p{
     font-size: 16px;
     color: #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
 }
