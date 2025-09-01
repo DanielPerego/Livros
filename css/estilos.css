@@ -14,10 +14,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     padding: 16px 32px;
 }
 
@@ -53,6 +51,8 @@ nav ul li a:hover {
 
 header {
     background: url(https://blog.blablacar.com.br/wp-content/uploads/2024/10/biblioteca.jpg);
+    background-size: cover;
+    background-position: center;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -80,8 +80,8 @@ header h1 {
     text-align: center;
     background-color: #f0c1b2;
     margin: 0 auto;
-    max-width: 1600px;
-    margin-top: 10px;
+    max-width: 150vh;
+    margin-top: 20px;
     border: 1px solid black;
     border-radius: 50px;
 }
